@@ -27,7 +27,7 @@ Your job as a data engineer is to build a pipeline to ingest that stream of data
       ├── insight_testsuite
       │   └── ...
       ├── output
-      │   └──sessinization.txt
+      │   └──sessionization.txt
       ├── src
       │   └──parser.py
       │   └──test_parser.py
@@ -38,7 +38,9 @@ Your job as a data engineer is to build a pipeline to ingest that stream of data
 
       
 ```
-data flows through sessionizer.py and written to output.txt
+Data flows line by line from log.csv into Sessionizer.
+Sessionizer parses each line and performs the necessary logic.
+Data is bulk-written into out output/sessionization.txt
  
 
 # Run-Instructions
